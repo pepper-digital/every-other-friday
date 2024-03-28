@@ -1,4 +1,4 @@
-# Astro Starter Kit: Blog
+# Every other Friday Landing Page - Built with astro
 
 ## 🧞 Commands
 
