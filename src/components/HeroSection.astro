@@ -1,0 +1,28 @@
+---
+import EofLogo from '../svgs/EofLogo.astro'
+---
+
+<section class="container grid grid-cols-12 gap-8 mb-14 md:mb-20">
+
+  <div class="col-span-full md:col-span-6 md:order-1">
+    <h1 class="max-w-[515px] md:pt-10 lg:pt-20 mb-6 md:mb-10">
+      <EofLogo />
+      <span class="visually-hidden"></span>
+    </h1>
+
+    <div class="flex items-center justify-center border border-solid bored-red-900 min-h-[100px]">
+      <p class="text-center">Form here</p>
+    </div>
+  </div>
+  
+    <div class="col-span-full md:col-span-6 md:order-2">
+      <div class="max-w-[515px] mx-auto mix-blend-multiply">
+        <video muted playsinline loop autoplay>
+            <source src="/eof-video.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+  </div>
+  
+</section>

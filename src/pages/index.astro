@@ -1,0 +1,26 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import HeroSection from '../components/HeroSection.astro';
+import SimpleText from '../components/SimpleText.astro';
+import Steps from '../components/Steps.astro';
+import Questions from '../components/Questions.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body class="bg-offwhite">
+		<!-- <Header /> -->
+		<main>
+			<HeroSection />
+			<SimpleText />
+			<Steps />
+			<Questions />
+			</main>
+		</main>
+		<!-- <Footer /> -->
+	</body>
+</html>
