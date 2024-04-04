@@ -1,5 +1,6 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
 import HeroSection from '../components/HeroSection.astro';
 import SimpleText from '../components/SimpleText.astro';
 import Steps from '../components/Steps.astro';
@@ -13,7 +14,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body class="bg-offwhite">
-		<!-- <Header /> -->
+		<Header />
 		<main>
 			<HeroSection />
 			<SimpleText />
