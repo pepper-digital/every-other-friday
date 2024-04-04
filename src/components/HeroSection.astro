@@ -19,7 +19,24 @@ import EofLogo from '../svgs/EofLogo.astro'
     </h1>
 
     <div class="flex items-center justify-center">
-      <div class="mktoForm" id="heroForm" mktoname="Form"></div>
+      <script is:inline src="//296-CMY-957.mktoweb.com/js/forms2/js/forms2.min.js"></script>
+      <script is:inline>
+        MktoForms2.loadForm("//296-CMY-957.mktoweb.com", "296-CMY-957", 10347);
+        MktoForms2.whenReady(function (form){
+          //Add an onSuccess handler
+          form.onSuccess(function(values, followUpUrl){
+            console.log('form successfully submitted')
+            //get the form's jQuery element and hide it
+            document.querySelector('form').style.display = 'none';
+            document.getElementById('confirmform').style.visibility = 'visible';
+            document.getElementById('confirmform').style.width = '100%';
+            //return false to prevent the submission handler from taking the lead to the follow up url.
+            return false;
+          });
+        });
+      </script>
+        <form id="mktoForm_10347"></form>
+        <div id="confirmform" style="visibility:hidden; width:0px;"><p><strong>Thanks for subscribing!</strong></p></div>
     </div>
   </div>
 
