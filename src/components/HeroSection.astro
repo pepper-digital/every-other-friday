@@ -1,13 +1,17 @@
 ---
-import EofLogo from '../svgs/EofLogo.astro'
+import EofLogo from "../svgs/EofLogo.astro";
 ---
 
-<section class="container grid grid-cols-1 md:grid-cols-12 gap-8 mb-14 md:mb-20 mt-10 md:mt-[60px]">
-
+<section
+  class="container grid grid-cols-1 md:grid-cols-12 gap-8 mb-14 md:mb-20 mt-10 md:mt-[60px]"
+>
   <div class="col-span-full md:col-span-6 md:order-2">
     <div class="max-w-[320px] md:max-w-[515px] mx-auto mix-blend-multiply">
       <video muted playsinline loop autoplay>
-          <source src="http://296-CMY-957.mktoweb.com/rs/296-CMY-957/images/eof-video.mp4?version=0" type="video/mp4">
+        <source
+          src="http://296-CMY-957.mktoweb.com/rs/296-CMY-957/images/eof-video.mp4?version=0"
+          type="video/mp4"
+        />
       </video>
     </div>
   </div>
@@ -15,31 +19,32 @@ import EofLogo from '../svgs/EofLogo.astro'
   <div class="col-span-full md:col-span-6 md:order-1">
     <h1 class="max-w-[515px] md:pt-10 lg:pt-20 mb-6 md:mb-10">
       <EofLogo />
-    <span class="sr-only">Every Other Friday - Business ideas to move the world</span>
+      <span class="sr-only">Every Other Friday - Business ideas to move the world</span>
     </h1>
 
     <div class="flex items-center justify-center">
-      <script is:inline src="//296-CMY-957.mktoweb.com/js/forms2/js/forms2.min.js"></script>
+      <script
+        is:inline
+        src="//296-CMY-957.mktoweb.com/js/forms2/js/forms2.min.js"></script>
       <script is:inline>
         MktoForms2.loadForm("//296-CMY-957.mktoweb.com", "296-CMY-957", 10347);
-        MktoForms2.whenReady(function (form){
+        MktoForms2.whenReady(function (form) {
           //Add an onSuccess handler
-          form.onSuccess(function(values, followUpUrl){
-            console.log('form successfully submitted')
+          form.onSuccess(function (values, followUpUrl) {
+            console.log("form successfully submitted");
             //get the form's jQuery element and hide it
-            document.querySelector('form').style.display = 'none';
-            document.getElementById('confirmform').style.visibility = 'visible';
-            document.getElementById('confirmform').style.width = '100%';
+            document.querySelector("form").style.display = "none";
+            document.getElementById("confirmform").style.visibility = "visible";
+            document.getElementById("confirmform").style.width = "100%";
             //return false to prevent the submission handler from taking the lead to the follow up url.
             return false;
           });
         });
       </script>
-        <form id="mktoForm_10347"></form>
-        <div id="confirmform" style="visibility:hidden; width:0px;"><p><strong>Thanks for subscribing!</strong></p></div>
+      <form id="mktoForm_10347"></form>
+      <div id="confirmform" style="visibility:hidden; width:0px;">
+        <p><strong>Thanks for subscribing!</strong></p>
+      </div>
     </div>
   </div>
-
-  </div>
-  
 </section>
