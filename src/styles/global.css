@@ -1,15 +1,15 @@
 @font-face {
   font-family: "Open Sans";
-  src: url("http://296-CMY-957.mktoweb.com/rs/296-CMY-957/images/OpenSans-Regular.woff?version=0") format("woff"),
-  url("http://296-CMY-957.mktoweb.com/rs/296-CMY-957/images/OpenSans-Regular.woff?version=0") format("woff2");
+  src: url("https://ukpages.deloitte.com/rs/676-RGI-700/images/OpenSans-Regular.woff?version=0") format("woff"),
+  url("https://ukpages.deloitte.com/rs/676-RGI-700/images/OpenSans-Regular.woff2?version=0") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("http://296-CMY-957.mktoweb.com/rs/296-CMY-957/images/OpenSans-Bold.woff?version=0") format("woff"),
-  url("http://296-CMY-957.mktoweb.com/rs/296-CMY-957/images/OpenSans-Bold.woff?version=0") format("woff2");
+  src: url("https://ukpages.deloitte.com/rs/676-RGI-700/images/OpenSans-Bold.woff?version=0") format("woff"),
+  url("https://ukpages.deloitte.com/rs/676-RGI-700/images/OpenSans-Bold.woff2?version=0") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
@@ -92,7 +92,11 @@ body {
   padding-top: 16px !important;
 }
 
-.mktoButton {
+.mktoForm .mktoHtmlText a {
+  @apply text-accessibleGreen underline;
+}
+
+.bg-offwhite .mktoForm .mktoButtonWrap .mktoButton {
   width: fit-content !important;
   font-size: 16px !important;
   font-weight: bold !important;
@@ -100,18 +104,18 @@ body {
   color: #fff !important;
   border-radius: 999px;
   line-height: 1 !important;
-  padding: 9px 32px 7px !important;
+  padding: 9px 32px 10px !important;
   border: 1px solid #26890D !important;
   transition: all .3s ease-in-out;
   background-image: none !important;
 }
 
-.mktoButton:hover {
+.bg-offwhite .mktoForm .mktoButtonWrap .mktoButton:hover {
   background-color: transparent !important;
   color: #26890D !important;
 }
 
-.footer p{
+.footer p {
   @apply mb-4 text-sm;
 }
 
