@@ -1,0 +1,27 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import HeroSectionStripped from '../components/HeroSectionStripped.astro';
+import SimpleTextStripped from '../components/SimpleTextStripped.astro';
+import QuestionsStripped from '../components/QuestionsStripped.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <!-- Variables -->
+		<meta class="mktoBoolean" id="showTextBlock" mktoName="Show text block" default="false" false_value="none" true_value="grid"></meta>
+	</head>
+	<body class="bg-offwhite" id="main">
+		<Header />
+		<main>
+			<HeroSectionStripped />
+      <SimpleTextStripped />
+			<QuestionsStripped />
+		</main>
+		<Footer />
+	</body>
+</html>
